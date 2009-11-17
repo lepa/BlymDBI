@@ -7,5 +7,5 @@ class BlymDBI_Mysql
 
 public:
 	BlymDBI_Mysql (const char*, const char*, const char*); 
-
+};
 
