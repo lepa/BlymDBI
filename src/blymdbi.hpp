@@ -1,5 +1,6 @@
 #include <vector>
 #include <exception>
+#include <string>
 
 typedef std::string String;
 
