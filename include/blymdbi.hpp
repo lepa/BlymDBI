@@ -6,6 +6,7 @@ typedef std::string String;
 
 class BlymDBI
 {
+public:
 	BlymDBI { throw UsedBase; };
 
 	virtual bool open_db (const char*);
