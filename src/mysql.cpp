@@ -4,18 +4,19 @@ cantInit CantInit;
 cantConn CantConnect;
 
 
-BlymDBI_Mysql::BlymDBI_Mysql (const char* host, const char* user, const char* pass)
+BlymDBI_Mysql::BlymDBI_Mysql (const char* host, const char* user, const char* pass, const char* db)
 {
-	if (! (mysql_init (db)) )
+	if (! (mysql_init (conn)))
 	{
 		throw CantInit;
 	}
 
-	if (! (mysql_real_connect (db, host, user, pass)) )
+	if (! (mysql_real_connect (conn, host, user, pass, db)))
 	{
 		throw CantConnect;
 	}
 
 }
+
 
 
