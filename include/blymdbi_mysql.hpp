@@ -26,3 +26,11 @@ class cantConn : public std::exception
 	}
 };
 
+class cantSelect : public std::exception
+{
+	const char* what () const throw ()
+	{
+		return "Can't select the database";
+	}
+};
+
