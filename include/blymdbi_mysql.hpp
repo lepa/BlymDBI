@@ -3,10 +3,10 @@
 
 class BlymDBI_Mysql: public BlymDBI;
 {
-	MYSQL* db;
+	MYSQL* conn;
 
 public:
-	BlymDBI_Mysql (const char*, const char*, const char*); 
+	BlymDBI_Mysql (const char*, const char*, const char*, const char*); 
 };
 
 
@@ -25,3 +25,4 @@ class cantConn : public std::exception
 		return "Can't connect in this database with this username and password";
 	}
 };
+
